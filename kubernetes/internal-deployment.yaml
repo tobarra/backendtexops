@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: development
   labels:
     app: events-internal
   name: events-internal
@@ -16,7 +17,7 @@ spec:
         app: events-internal
     spec:
       containers:
-      - image: drehnstrom/events-internal:v1.0
+      - image: gcr.io/mar-roidtc318/texopsdocker-demo:v0.1
         name: events-internal
         imagePullPolicy: "Always"
         resources:

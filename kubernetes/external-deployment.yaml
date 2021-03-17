@@ -1,9 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: development
   labels:
     app: events-external
   name: events-external
+  
 spec:
   replicas: 3
   selector:
@@ -16,7 +18,7 @@ spec:
         app: events-external
     spec:
       containers:
-      - image: drehnstrom/events-external:v1.0
+      - image: gcr.io/mar-roidtc318/frontendimage:v0.1
         name: events-external
         imagePullPolicy: "Always"
         env:
