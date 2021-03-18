@@ -3,4 +3,8 @@ apiVersion: v1
 metadata:
   name: development
   labels:
+<<<<<<< HEAD
     name: development
+=======
+    name: development
+>>>>>>> 4e8cbae283d630913abd62682567b6616535e99b

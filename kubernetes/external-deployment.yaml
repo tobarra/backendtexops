@@ -1,9 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: development
   labels:
     app: events-external
   name: events-external
+  
 spec:
   replicas: 3
   selector:
