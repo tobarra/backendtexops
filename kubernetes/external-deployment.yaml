@@ -16,7 +16,7 @@ spec:
         app: events-external
     spec:
       containers:
-      - image: drehnstrom/events-external:v1.0
+      - image: gcr.io/mar-roidtc309/frontendtexops:v0.1
         name: events-external
         imagePullPolicy: "Always"
         env:
